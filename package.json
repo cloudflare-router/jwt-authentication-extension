@@ -1,0 +1,33 @@
+{
+  "name": "@cloudflare-router/jwt-authentication",
+  "version": "1.0.0",
+  "description": "Allows you to easily verify JWT tokens provided in headers or similar.",
+  "main": "dist/JwtAuthentication.js",
+  "repository": "https://github.com/cloudflare-router/jwt-authentication-extension",
+  "author": "Visualizememe",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/node": "^15.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "^7.27.0",
+    "eslint-plugin-security": "^1.4.0",
+    "jest": "^27.0.3",
+    "joi": "^17.4.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.5.8",
+    "cloudflare-router": "latest",
+    "debug": "^4.3.4",
+    "jsonwebtoken": "^8.5.1",
+    "tslib": "^2.2.0"
+  },
+  "scripts": {
+    "build": "tsc --skipLibCheck",
+    "go": "node dist",
+    "prepublishOnly": "yarn build"
+  }
+}
